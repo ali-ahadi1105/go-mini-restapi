@@ -1,0 +1,90 @@
+# ==============================
+# Go Project .gitignore
+# ==============================
+
+# Binaries and executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/bin               # Directory for compiled binaries
+/dist              # Distribution output directory
+
+# Dependency directories
+/vendor            # Go modules vendor directory
+/Godeps            # Old-style dependency management
+
+# Go workspace files
+go.work            # Go workspace file
+go.work.sum        # Go workspace checksum file
+
+# Build and cache files
+debug              # Debug binary
+*.bin              # Generic binary files
+/pkg               # Go pkg directory
+/go-build/         # Go build cache
+__debug_bin        # Delve debug binary
+
+# Test and coverage output
+*.coverprofile     # Go coverage profile
+coverage.txt       # Coverage output file
+coverage.html      # HTML coverage report
+profile.out        # CPU profile output
+
+# Modules
+go.sum             # Can be regenerated, but often included for safety
+
+# Development environment files
+.env               # Environment variables
+.env.local         # Local environment overrides
+.env*.local        # Any environment local files
+
+# Editor and IDE files
+.idea/             # JetBrains IDE
+.vscode/           # VS Code
+*.swp              # Vim swap files
+*.swo              # Vim swap files
+*.code-workspace   # VS Code workspace file
+
+# OS generated files
+.DS_Store          # macOS folder attributes
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Log files
+*.log
+logs/
+
+# Documentation
+/docs/_build/      # Built documentation
+
+# Custom output directories
+/output            # Generic output directory
+/tmp               # Temporary files
+
+# ==============================
+# Additional Patterns (Uncomment if needed)
+# ==============================
+
+# # Protobuf/gRPC generated files
+# *.pb.go
+# *.gw.go
+
+# # SQLite files
+# *.db
+# *.sqlite
+
+# # Terraform files (if used)
+# .terraform/
+# *.tfstate
+# *.tfstate.backup
+# *.tfvars
+# *.hcl
